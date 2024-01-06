@@ -1,0 +1,207 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.box{
+    background-color: #030116;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.description{
+    color: white;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030116;
+    overflow: hidden;
+}
+
+section .text{
+    position: relative;
+    font-size: 4em;
+    color: white;
+    -webkit-box-reflect: below 0.46rem linear-gradient(transparent , black);
+}
+
+.text span{
+    position: relative;
+    display: inline-block;
+}
+
+.sales{
+    color: #030116;
+    margin: 7px;
+    text-align: center;
+}
+.btnad{
+    color:#030116;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin-left: 75px;
+}
+.btnad:hover{
+    color: white;
+    background-color: #030116;
+}
+.boxc{
+    background-color: #030116;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.descriptionc{
+    color: white;
+}
+i{
+    text-align: center;
+    width: 100%;
+}
+.mc{
+    text-align: justify;
+}
+#prc:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.spacebar{
+    height: 3px;
+    width: 80px;
+    background-color: #030116;
+    text-align: center;
+    border-radius: 9px;
+    margin: 0px auto;
+    margin-bottom: 25px;
+}
+.spacebarr{
+    height: 3px;
+    width: 80px;
+    background-color: #030116;
+    text-align: center;
+    border-radius: 9px;
+    margin: 0px auto;
+    
+}
+
+
+#cr11{
+    background-color: #030116;
+    height: 85vh;
+    width: 100%;
+}
+
+.hud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 120px;
+    font-size: 3rem;
+    line-height: 200%;
+}
+.hudes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightseagreen;
+    font-size: 2rem;
+}
+.hudese{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: white;
+    margin-bottom: 75px;
+    margin-top: 30px;
+    font-family: cursive;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030116;
+    overflow: hidden;
+}
+
+.section1 .text1{
+    position: relative;
+    color: white;
+    
+}
+
+.text1 span{
+    position: relative;
+    display: inline-block;
+}
+#nva{
+    position: relative;
+ 
+    color: white;
+}
+#nva::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}   
+#nva:hover::before{
+    width: 80%;
+}
+#nvaa{
+    position: relative;
+ 
+    color: white;
+}
+#nvaa::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    transition: 1s ease-in;
+}
+#nvaa:hover::before{
+    width: 70px;
+}
+#nvaaa{
+    position: relative;
+ 
+    color: white;
+}
+#nvaaa::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+#nvaaa:hover::before{
+    width: 72%;
+}
+.error{
+    color: red;
+}
+#adtbtn:hover{
+    background-color: white !important ;
+    color: #030116 !important;
+}

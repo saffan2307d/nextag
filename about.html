@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="./index.js"></script>
+    <title>NEXTAG-A New Emerging Brand</title>
+    <style>
+      .card{
+        transition: all 2s ease 0s;
+      }
+
+      .card:hover{
+        transform: scale(0.9);
+      }
+      body{
+        font-family: poppins;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #030112;;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light me-5 ms-4" href="#"><img src="./img/nt2.jpg" alt="" style="height: 75px; width: 85px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><i class="fa-solid fa-bars" style="color: #f7f7f8;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light me-3" id="nva" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light me-3" id="nvaa" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" style="color:#030112" href="./men.html">MEN COLLECTION</a></li>
+                <li><a class="dropdown-item" style="color: #030112;" href="./women.html">WOMEN COLLECTION</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light me-3" id="nva" href="./about.html">About Us</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light me-3" id="nva" href="./contactus.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn  me-3" style="color: white;" id="nvaaa" data-bs-toggle="modal" data-bs-target="#loginmodal" type="button"> LOGIN </button>
+            <button class="btn  me-3" style="color: white;" id="nvaaa" data-bs-toggle="modal" data-bs-target="#signupmodal" type="button"> SIGNUP </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupmodal" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header" >
+      <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <form id="myform" method="post">
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input name="name" type="text" class="form-control" id="name" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+                <div class="col-sm-10">
+                  <input name="email" type="email" class="form-control" id="inputEmail3" required>
+                </div>
+              </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input name="password" type="password" class="form-control" id="inputPassword3" required>
+              </div>
+            </div>
+           
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Date Of Birth</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="inputPassword3" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Do You Agree With Nextag Policy
+                  </label>
+                </div>
+              </div>
+            </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn" style="background-color: white; color: #030112;"
+        data-bs-dismiss="modal">Close</button>
+      <button onclick="sgn()" type="submit" class="btn btn" style="background-color: #030112; color: white;">Sign Up</button>
+    </div>
+  
+          </form>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
+
+<!--Login Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <form id="loginform" method="post">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <p class="text-secondary">Forgot Password? <a href="" onclick="chf()" style="color: #030112;">Click Here</a></p>
+<div class="modal-footer">
+  <button type="button" class="btn btn" style="background-color: white ; color: #030112;" data-bs-dismiss="modal">Close</button>
+  <button onclick="lgn()" type="submit" class="btn btn" style="background-color: #030112; color: white;">Log In</button>
+</div>
+      
+    </form>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+    <div class="boxc">
+        <div class="descriptionc">
+            <h1>About Us</h1>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="descirp">
+            <p>Welcome to Nextag, where elegance meets functionality in the world of purses and wallets. Born from a
+                passion for sophisticated design and a commitment to quality craftsmanship, Nextag is more than just a
+                brand; it's a statement of style and a testament to meticulous attention to detail. Each purse and
+                wallet in our collection is a masterpiece, carefully curated to blend modern trends with timeless
+                appeal. We believe that accessories are not just an extension of one's outfit; they are an expression of
+                individuality. At Nextag, we strive to offer a diverse range of products that cater to every taste and
+                occasion. Our dedication to using premium materials ensures durability, while our commitment to staying
+                ahead of fashion trends guarantees that you'll always find the latest and most stylish pieces in our
+                collection. Discover the perfect blend of fashion and function with Nextag, where every accessory tells
+                a story of sophistication and flair.</p>
+        </div>
+
+
+        <div class="brands">
+            <h2 class="text-center mt-4">The Brands We Offer</h2>
+            <div class="spacebar mb-4 mt-2" style="width: 115px;"></div>
+            <div class="cards mb-3 mt-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4 d-none d-sm-none d-md-block">
+                        <img src="./img/lv1.png" class="mt-3" style="height: 200px; width: 240px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Louis Vuitton</h5>
+                            <p class="card-text">Louis Vuitton, a name synonymous with luxury, craftsmanship, and
+                                timeless elegance, stands as an icon in the world of fashion. Founded in Paris in 1854
+                                by Louis Vuitton, the brand has become a symbol of French sophistication and
+                                savoir-faire. Specializing in luggage, handbags, and accessories. The brand's dedication
+                                to heritage is mirrored in its classic designs, while collaborations with contemporary
+                                artists bring a fresh and modern perspective. Louis Vuitton is not merely a label; it is
+                                a legacy of luxury that continues to redefine the standards of fashion and indulgence.
+                                Elevate your style with Louis Vuitton, where tradition meets the avant-garde in a
+                                celebration of enduring glamour.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                                       <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Bellroy</h5>
+                            <p class="card-text">Bellroy is a renowned brand celebrated for its innovative approach to accessories, particularly wallets and bags. Focused on minimalist design and functionality, Bellroy products are known for their sleek aesthetics and clever internal organization. The company's commitment to using sustainable materials adds an environmentally conscious dimension to its offerings. With a reputation for quality craftsmanship and thoughtful design, Bellroy has become a popular choice for those seeking stylish and practical accessories that seamlessly blend form and function. We offer many wallets of this brand for our valued customers wit original quality leather.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4  d-none d-sm-none d-md-block">
+                        <img src="./img/br-removebg-preview.jpg" class="ms-5" style="height: 200px; width: 230px;" alt="...">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4 d-none d-sm-none d-md-block">
+                        <img src="./img/gucci.jpg" style="height: 200px; width: 230px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">GUCCI</h5>
+                            <p class="card-text">Gucci, an iconic Italian luxury brand, is synonymous with sophistication and style. Renowned for its high-end fashion and accessories, Gucci has left an indelible mark on the fashion industry since its establishment in 1921. The brand is celebrated for its distinctive designs, featuring the iconic double-G logo and innovative patterns. Gucci's commitment to craftsmanship and attention to detail is evident in its diverse range of products, including handbags, shoes, and ready-to-wear clothing. With a blend of tradition and modernity, Gucci continues to be a symbol of luxury and timeless elegance.
+
+
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                                       <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Nextag</h5>
+                            <p class="card-text">Introducing the latest entrant into the world of accessories — the [Brand Name]. This cutting-edge wallet and purse brand brings a fresh perspective to the fashion scene, seamlessly blending style and functionality. With meticulous attention to detail, each piece reflects the brand's commitment to quality craftsmanship and innovative design. Whether it's a sleek wallet for everyday use or an elegant purse for special occasions, [Brand Name] combines modern aesthetics with practical features, catering to the diverse needs of fashion-conscious individuals. Elevate your accessory game with the distinct charm and contemporary allure of [Brand Name], where every wallet and purse tells a story of sophistication and timeless elegance.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-sm-none d-md-block">
+                        <img src="./img/nt2.jpg" style="height: 250px; width: 230px;" class="ms-5 " alt="...">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="reaviews mt-5">
+          <h2 class="text-center mb-2">Reviews</h2>
+          <div class="spacebarr" style="width: 65px;"></div>
+          <div class="container">
+          <div class="flex-column d-flex flex-md-row justify-content-md-between align-items-center">
+          <div class="cards mt-3" data-aos="fade-up" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mb-2 text-center">Amir Ali.</h5>
+              <div class="d-flex justify-content-center mb-3"><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span></div>
+              <p class="card-text text-center">I recently purchased a product from NEXTAG and I am thoroughly impressed with both the quality of the item and the level of care taken in its delivery. The product exceeded my expectations. It's evident that NEXTAG prioritizes excellence in their offerings.</p>
+            
+            </div>
+          </div>
+          <div class="cards mt-3" data-aos="fade-up" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mb-2 text-center">Khalid Ahmad.</h5>
+              <div class="d-flex justify-content-center mb-3"><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span></div>
+              <p class="card-text text-center">I recently had the pleasure of experiencing the exceptional quality of wallet from NEXTAG, and it left me thoroughly impressed. The level of craftsmanship and attention to detail was truly outstanding.</p>
+            
+            </div>
+          </div>
+   
+          <div class="cards mt-3" data-aos="fade-up" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mb-2 text-center">Anaya.</h5>
+              <div class="d-flex justify-content-center mb-3"><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span><span><i class="fa-solid fa-star" style="color: #fdf408;"></i></span></div>
+              <p class="card-text text-center">Recently, I treated myself to a product from Gucci, and the experience was nothing short of exquisite. In a world where authenticity can be elusive, I was delighted to find that my Gucci purchase was indeed the genuine article.</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       
+
+        <!-- Footer -->
+    <footer class="py-5 mt-4" style="background-color: #030112; color: white;">
+      <div class="container">
+      <div class="row">
+        <div class="col-12 d-block d-sm-block d-md-none col-sm-12 col-md-2 d-block">
+          <h5 class="text-center">Get In Touch</h5>
+          <ul class="nav flex-column align-items-center">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="fa-solid fa-envelope mb-2" style="font-size: 15;"></span><span class="text-light"> nextag1@gmail.com</span></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="fa-solid fa-phone" style="font-size: 15px;"> </span><span class="text-light"> +9233060321</span></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Customer Service Timings</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Monday-Sunday</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">11:00-11:00</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2 ms-5 d-none d-sm-none d-md-block">
+          <h5>Sections</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-light">Home</a></li>
+            <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Men Collection</a></li>
+            <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">Women Collection</a></li>
+            <li class="nav-item mb-2"><a href="./contactus.html" class="nav-link p-0 text-light">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-light">About Us</a></li>
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-light">Register</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2 ms-2 d-none d-sm-none d-md-block">
+          <h5>Brands</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Louis Vuitton</a></li>
+            <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">GUCCI</a></li>
+            <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Bellroy</a></li>
+            <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">TommyHilfiger</a></li>
+            <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">Channel</a></li>
+            <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Nextag</a></li>
+
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1 d-none d-sm-none d-md-block">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="0qgglp">
+              <button class="btn btn-primary" type="button" fdprocessedid="z8nzpb">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class=" py-4 my-4 border-top">
+        <p class="text-center">© 2023 NEXTAG, Inc. All rights reserved.</p>
+        
+      </div>
+    </div>
+    </footer>
+
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <script src="./jquery-3.7.1.min.js"></script>
+     <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>  AOS.init({
+      duration: 1000,
+      offset: 120,
+  });
+</script>
+
+<script>  jQuery('#myform').validate({
+  rules:{
+    name : "required",
+
+        email:{
+            required : true,
+            email : true
+        },
+        password:{
+            required : true,
+            minlength : 8
+        }
+
+    },
+    messages:{
+        name : "Name must be required",
+        email:{
+            required : "Email Must be required",
+            email : "Please enter a valid email"
+        },
+        password:{
+            required:"Password Must be required",
+            password : "Password must be 8 characters long"
+        }
+    }
+  })
+  jQuery('#loginform').validate({
+  rules:{
+    name : "required",
+
+        email:{
+            required : true,
+            email : true
+        },
+        password:{
+            required : true,
+            minlength : 8
+        }
+
+    },
+    messages:{
+        name : "Name must be required",
+        email:{
+            required : "Email Must be required",
+            email : "Please enter a valid email"
+        },
+        password:{
+            required:"Password Must be required",
+           
+        }
+    }
+  })
+</script>
+    </body>
+
+</html>

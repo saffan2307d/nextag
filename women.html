@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="./index.js"></script>
+
+    <title>NEXTAG-A New Emerging Brand</title>
+    <style>
+      .card{
+        transition: all 2s ease 0s;
+      }
+
+      .card:hover{
+        transform: scale(0.9);
+      }
+      body{
+        font-family: poppins;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #030112;;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light me-5 ms-4" href="#"><img src="./img/nt2.jpg" alt="" style="height: 75px; width: 85px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=""><i class="fa-solid fa-bars" style="color: #f7f7f8;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse text-center"  id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light me-3" id="nva" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light me-3" id="nvaa" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" style="color:#030112" href="./men.html">MEN COLLECTION</a></li>
+            <li><a class="dropdown-item" style="color: #030112;" href="./women.html">WOMEN COLLECTION</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light me-3" id="nva" href="./about.html">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light me-3" id="nva" href="./contactus.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button class="btn  me-3" style="color: white;" id="nvaaa" data-bs-toggle="modal" data-bs-target="#loginmodal" type="button"> LOGIN </button>
+        <button class="btn  me-3" style="color: white;" id="nvaaa" data-bs-toggle="modal" data-bs-target="#signupmodal" type="button"> SIGNUP </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupmodal" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <form id="myform" method="post">
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input name="name" type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+                <div class="col-sm-10">
+                  <input name="email" type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input name="password" type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Date Of Birth</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="inputPassword3">
+                </div>
+              </div>
+    
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Do You Agree With Nextag Policy
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn" style="background-color: white; color: #030112;"
+                data-bs-dismiss="modal">Close</button>
+              <button onclick="sgn()" type="submit" class="btn btn" style="background-color: #030112; color: white;">Sign Up</button>
+            </div>
+         
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Login Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <form id="loginform" method="post">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <p class="text-secondary">Forgot Password? <a href="" onclick="chf()" style="color: #030112;">Click Here</a></p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn" style="background-color: white ; color: #030112;" data-bs-dismiss="modal">Close</button>
+        <button onclick="lgn()" type="submit" class="btn btn" style="background-color: #030112; color: white;">Log In</button>
+      </div>
+      
+    </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="boxc">
+    <div class="description">
+      <div class="section">
+        <h1 class="text">Women Collection</h1>
+      </div>
+    </div>  
+  </div>
+  <div class="container">
+    <div class="mc my-4">
+      <p>Discover the epitome of sophistication and functionality with our curated collection of men's wallets. Crafted
+        with precision and attention to detail, our assortment showcases a fusion of timeless design and modern utility.
+        From classic leather billfolds exuding an air of elegance to sleek minimalist cardholders perfect for the
+        contemporary man, our collection caters to diverse tastes and preferences. Impeccable craftsmanship ensures
+        durability, while the array of colors and textures allows you to express your individual style. Whether you
+        prefer the traditional bifold or the trendy slim wallet, our selection merges fashion with practicality,
+        providing ample space for cards, cash, and essentials. Elevate your everyday carry with our men's wallet
+        collection, where sophistication meets functionality in every stitch and fold.</p>
+    </div>
+  </div>
+
+  <div class="cards">
+  <div class="container">
+    <h2 class="my-3">Purse Section</h2>
+  </div>
+  <div class="container mt-5">
+    <div class="sales text-center my-3">
+      <h1>GUCCI</h1>
+      
+    <div class=" mb-3 spacebar">
+    </div>
+    </div>
+    <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p10-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-01 <span>GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p9-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-02 <span> GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p11-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-03 <span> GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>  
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p12-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-04 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p13-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-05 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p14-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-06 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p1-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-07 <span> GU CCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 11000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p2-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-08 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 11000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p6-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-09 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 11000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p15-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-10<span> GUCCI</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p16-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-11 <span> GUCCI</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p22-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">G-12 <span> GUCCI</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="sales text-center my-3">
+      <h1>CHANEL</h1>
+    </div>
+    <div class="spacebar">
+    </div>
+    <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p53-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-01 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p54-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-02 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p56-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-03 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p60-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-04 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p58-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-05 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5> 
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p59-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-06 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p51-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHH-07 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR75000</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p52-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-08 <span> CHANEL</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 7500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p55-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CH-09 <span> CHANEL</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 7500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="sales text-center my-3">
+      <h1>Nextag</h1>
+    </div>
+    <div class="spacebar">
+    </div>
+    <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p21-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-01 <span> Nextag</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 6000</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p23-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-02 <span>Nextag </span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 6000</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p39-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-03<span>Nextag </span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 6000</h5>
+          <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p38-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-04 <span>PNextag</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 4500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p37-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-05 <span> Nextag</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 4500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p36-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">N-06 <span> Nextag</span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 4500</h5>
+        <button onclick="adtc()" id="adtbtn" style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <h2 class="mt-5 mb-3">HandBags Section</h2>
+  </div>
+  <div class="container mt-5">
+    <div class="sales text-center my-3">
+      <h1>GUCCI</h1>
+    </div>
+    <div class="spacebar">
+    </div>
+    <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p28-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-01 <span>GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1 " style="width: 18rem;">
+        <img src="./img/p29-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-02 <span> GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p30-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-03 <span> GUCCI</span></p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 14500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p24-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-04 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p25-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-05 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p31-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">GHB-06 <span> GUCCI </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 13500</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+ 
+  <div class="container mt-5">
+    <div class="sales text-center my-3">
+      <h1>CHANEL</h1>
+    </div>
+    <div class="spacebar">
+    </div>
+    <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center" id="crd">
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p33-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-01 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p35-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-02 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card me-2 mb-1" style="width: 18rem;">
+        <img src="./img/p34-removebg-preview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-03 <span> CHANEL </span>
+          </p>
+          <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 9500</h5>
+          <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-column d-flex flex-md-row justify-content-md-center align-items-center">
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p46-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-04 <span> CHANNEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p48-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-05 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card me-2 mb-1" style="width: 18rem;">
+      <img src="./img/p49-removebg-preview.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="text-dark" id="prc" style="font-style: italic; text-align: center ;">CHB-06 <span> CHANEL </span></p>
+        <h5 class="card-title mb-3" style="color: #030112; text-align: center;">PKR 8200</h5>
+        <button style="background-color: #030112; color: white; padding: 4px; width: 100%;">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+</div>
+<footer class="py-5 mt-4" style="background-color: #030112; color: white;">
+  <div class="container">
+  <div class="row">
+    <div class="col-12 d-block d-sm-block d-md-none col-sm-12 col-md-2 d-block">
+      <h5 class="text-center">Get In Touch</h5>
+      <ul class="nav flex-column align-items-center">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="fa-solid fa-envelope mb-2" style="font-size: 15;"></span><span class="text-light"> nextag1@gmail.com</span></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="fa-solid fa-phone" style="font-size: 15px;"> </span><span class="text-light"> +9233060321</span></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Customer Service Timings</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Monday-Sunday</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">11:00-11:00</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2 ms-5 d-none d-sm-none d-md-block">
+      <h5>Sections</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Men Collection</a></li>
+        <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">Women Collection</a></li>
+        <li class="nav-item mb-2"><a href="./contactus.html" class="nav-link p-0 text-light">Contact Us</a></li>
+        <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-light">About Us</a></li>
+        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-light">Register</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2 ms-2 d-none d-sm-none d-md-block">
+      <h5>Brands</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Louis Vuitton</a></li>
+        <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">GUCCI</a></li>
+        <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Bellroy</a></li>
+        <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">TommyHilfiger</a></li>
+        <li class="nav-item mb-2"><a href="./women.html" class="nav-link p-0 text-light">Channel</a></li>
+        <li class="nav-item mb-2"><a href="./men.html" class="nav-link p-0 text-light">Nextag</a></li>
+
+      </ul>
+    </div>
+
+    <div class="col-4 offset-1 d-none d-sm-none d-md-block">
+      <form>
+        <h5>Subscribe to our newsletter</h5>
+        <p>Monthly digest of whats new and exciting from us.</p>
+        <div class="d-flex w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="0qgglp">
+          <button class="btn btn-primary" type="button" fdprocessedid="z8nzpb">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class=" py-4 my-4 border-top">
+    <p class="text-center">© 2023 NEXTAG, Inc. All rights reserved.</p>
+    
+  </div>
+</div>
+</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./jquery-3.7.1.min.js"></script>
+<script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    jQuery('#myform').validate({
+          rules:{
+            name : "required",
+
+                email:{
+                    required : true,
+                    email : true
+                },
+                password:{
+                    required : true,
+                    minlength : 8
+                }
+
+            },
+            messages:{
+                name : "Name must be required",
+                email:{
+                    required : "Email Must be required",
+                    email : "Please enter a valid email"
+                },
+                password:{
+                    required:"Password Must be required",
+                    password : "Password must be 8 characters long"
+                }
+            }
+          })
+          jQuery('#loginform').validate({
+          rules:{
+            name : "required",
+
+                email:{
+                    required : true,
+                    email : true
+                },
+                password:{
+                    required : true,
+                    minlength : 8
+                }
+
+            },
+            messages:{
+                name : "Name must be required",
+                email:{
+                    required : "Email Must be required",
+                    email : "Please enter a valid email"
+                },
+                password:{
+                    required:"Password Must be required",
+                   
+                }
+            }
+          })
+      
+</script>
+  </body>
+</html>
